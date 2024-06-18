@@ -1,6 +1,7 @@
 Todo List Application Overview
 Description:
 The Todo List application is a simple task management tool built using React.js. It allows users to create, update, delete, and organize tasks into different status columns: "To Do", "In Progress", and "Done". Tasks can be dragged and dropped between columns to update their status.
+
 -----------------------------
 
 Key Features:
@@ -15,6 +16,7 @@ HTML/CSS: Structuring and styling the application.
 JavaScript (ES6+): Modern JavaScript syntax for application logic.
 JSON Data: Storing initial task data.
 GitHub: Version control and repository hosting.
+
 -----------------------------
 
 How to Run the Todo List App:
@@ -29,6 +31,7 @@ Start the Development Server:
 
 View the Application:
 Open your web browser and go to http://localhost:3000 to see the Todo List application running.
+
 -----------------------------
 
 Usage Instructions:
