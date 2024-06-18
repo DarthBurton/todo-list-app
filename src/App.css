@@ -1,38 +1,175 @@
-.App {
-  text-align: center;
+/* Styles for the entire application container */
+.app {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  font-family: Arial, sans-serif; 
+  padding: 20px; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styling for the main heading */
+h1 {
+  margin-bottom: 20px; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Flex container for columns */
+.columns {
+  display: flex; 
+  width: 100%; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Styling for each column */
+.column {
+  flex: 1; 
+  margin: 10px; 
+  background-color: #f0f0f0; 
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-height: 400px;
+  display: flex; 
+  flex-direction: column; 
+}
+
+/* Styling for the column header */
+.column h2 {
+  text-align: center; 
+  background-color: #6200ea; 
   color: white;
+  padding: 10px; 
+  margin: 0; 
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px; 
+  position: sticky; 
+  top: 0; 
+  z-index: 1; 
 }
 
-.App-link {
-  color: #61dafb;
+/* Styling for the task list within each column */
+.tasks {
+  overflow-y: auto; 
+  padding: 10px; 
+  flex-grow: 1; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styling for each task */
+.task {
+  background-color: #ffffff; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  margin-bottom: 10px; 
+  padding: 10px; 
+  cursor: grab; 
+}
+
+/* Styling for task details */
+.task p {
+  margin: 5px 0; 
+}
+
+/* Styling for task action buttons */
+.task-actions {
+  text-align: right; 
+}
+
+.task-actions button {
+  background-color: #d9534f; 
+  color: white; 
+  border: none; 
+  padding: 5px 10px; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+
+.task-actions button:hover {
+  background-color: #c9302c; 
+}
+
+/* Styling for empty column message */
+.empty-column {
+  text-align: center; 
+  color: #888; 
+  padding: 20px; 
+}
+
+/* Styling for task form container */
+.task-form-container {
+  margin-top: 20px; 
+  width: 50%; 
+  background-color: #f9f9f9; 
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  padding: 20px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Styling for task form heading */
+.task-form h3 {
+  text-align: center; 
+  margin-bottom: 10px; 
+}
+
+/* Styling for form labels */
+.task-form label {
+  display: flex; 
+  flex-direction: column; 
+  margin-bottom: 10px; 
+}
+
+/* Styling for form inputs, select, and textarea */
+.task-form input,
+.task-form select,
+.task-form textarea {
+  padding: 8px; 
+  margin-top: 5px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+}
+
+/* Styling for form submit button */
+.task-form button {
+  background-color: #28a745; 
+  color: white; 
+  border: none; 
+  padding: 10px;
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+
+.task-form button:hover {
+  background-color: #218838; 
+}
+
+/* Styling for modal overlay */
+.modal-overlay {
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  background: rgba(0, 0, 0, 0.5); 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+/* Styling for modal content */
+.modal {
+  background: white; 
+  padding: 20px; 
+  border-radius: 8px; 
+  text-align: center; 
+}
+
+/* Styling for modal button */
+.modal button {
+  background-color: #6200ea; 
+  color: white; 
+  border: none; 
+  padding: 10px; 
+  border-radius: 4px; 
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background-color: #3700b3; 
 }
